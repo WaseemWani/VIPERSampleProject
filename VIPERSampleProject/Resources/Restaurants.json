@@ -1,0 +1,66 @@
+
+[
+    {
+        "name": "The Delhi Darbar",
+        "type": "Kashmiri Restaurant",
+        "address": "KP Road, Opposite Bus Stand, Anantnag",
+        "pin": "192101",
+        "google_rating": "3.7"
+    },
+    {
+        "name": "Hat Trick",
+        "type": "Fast food restaurant",
+        "address": "K P Road, Nai Basti, Anantnag",
+        "pin": "192101",
+        "google_rating": "3.7"
+    },
+    {
+        "name": "Hitz",
+        "type": "Kashmiri restaurant",
+        "address": "Sherbagh Road, Lal Chowk, Anantnag",
+        "pin": "192101",
+        "google_rating": "3.5"
+    },
+    {
+        "name": "Bold Street Café",
+        "type": "Pizza Restaurant",
+        "address": "KP Road, Opposite Idea Store, Qazi Bagh, Anantnag",
+        "pin": "192101",
+        "google_rating": "4.1"
+    },
+    {
+        "name": "Mughal Darbar",
+        "type": "Mughlai restaurant",
+        "address": "Mehman Gali, Lal Chowk, Anantnag",
+        "pin": "192101",
+        "google_rating": "3.8"
+    },
+    {
+        "name": "Amigos",
+        "type": "Pizza restaurant",
+        "address": "KP Road, Qazi Bagh, Anantnag",
+        "pin": "192101",
+        "google_rating": "4.0"
+    },
+    {
+        "name": "Hunger Street",
+        "type": "Fast food restaurant",
+        "address": "KP Rd, Qazi Bagh, Anantnag",
+        "pin": "192101",
+        "google_rating": "3.6"
+    },
+    {
+        "name": "Parsa's",
+        "type": "Indian Non Veg Restaurant",
+        "address": "Laizbal K.P Road Anantnag",
+        "pin": "192101",
+        "google_rating": "3.8"
+    },
+    {
+        "name": "Kh'n Ch'n",
+        "type": "Asian restaurant",
+        "address": "KP Rd, Laizbal, Anantnag",
+        "pin": "192101",
+        "google_rating": "3.3"
+    }
+]
