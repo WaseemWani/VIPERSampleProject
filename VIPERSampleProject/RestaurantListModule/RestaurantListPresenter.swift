@@ -13,6 +13,7 @@ class RestaurantListPresenter: Presenter {
             interactor?.fetchRestaurants()
         }
     }
+    
     var view: AnyView?
     var router: Router?
 
