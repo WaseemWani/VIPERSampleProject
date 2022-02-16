@@ -31,8 +31,8 @@ class RestaurantListRouter: Router {
     }
     
     func routToDetailScreen(restaurantName: String) {
-        
+        let detailRouter = RestaurantDetailRouter.start(restaurantName: restaurantName)
+        guard let restaurantDetailVC = detailRouter.entryPoint else { return }
+        entryPoint?.navigationController?.pushViewController(restaurantDetailVC, animated: true)
     }
-    
-    
 }

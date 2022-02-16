@@ -20,6 +20,12 @@
 		8DE2410127BD4082006807F6 /* RestaurantListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2410027BD4082006807F6 /* RestaurantListInteractor.swift */; };
 		8DE2410427BD40A8006807F6 /* RestaurantListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2410327BD40A8006807F6 /* RestaurantListPresenter.swift */; };
 		8DE2410727BD4153006807F6 /* RestaurantListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2410627BD4153006807F6 /* RestaurantListEntity.swift */; };
+		8DE2410B27BD47DD006807F6 /* RestaurantDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2410A27BD47DD006807F6 /* RestaurantDetailRouter.swift */; };
+		8DE2410F27BD47F2006807F6 /* RestaurantDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2410E27BD47F2006807F6 /* RestaurantDetailPresenter.swift */; };
+		8DE2411227BD4811006807F6 /* RestaurantDetailIeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2411127BD4811006807F6 /* RestaurantDetailIeInteractor.swift */; };
+		8DE2411527BD483A006807F6 /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2411427BD483A006807F6 /* RestaurantDetailViewController.swift */; };
+		8DE2411827BD4950006807F6 /* RestaurantDetailModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2411727BD4950006807F6 /* RestaurantDetailModuleProtocols.swift */; };
+		8DE2411B27BD4996006807F6 /* RestaurantDetailEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2411A27BD4996006807F6 /* RestaurantDetailEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +44,12 @@
 		8DE2410027BD4082006807F6 /* RestaurantListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListInteractor.swift; sourceTree = "<group>"; };
 		8DE2410327BD40A8006807F6 /* RestaurantListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListPresenter.swift; sourceTree = "<group>"; };
 		8DE2410627BD4153006807F6 /* RestaurantListEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListEntity.swift; sourceTree = "<group>"; };
+		8DE2410A27BD47DD006807F6 /* RestaurantDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailRouter.swift; sourceTree = "<group>"; };
+		8DE2410E27BD47F2006807F6 /* RestaurantDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailPresenter.swift; sourceTree = "<group>"; };
+		8DE2411127BD4811006807F6 /* RestaurantDetailIeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailIeInteractor.swift; sourceTree = "<group>"; };
+		8DE2411427BD483A006807F6 /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
+		8DE2411727BD4950006807F6 /* RestaurantDetailModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailModuleProtocols.swift; sourceTree = "<group>"; };
+		8DE2411A27BD4996006807F6 /* RestaurantDetailEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +82,7 @@
 		8DE240D327BD3A11006807F6 /* VIPERSampleProject */ = {
 			isa = PBXGroup;
 			children = (
+				8DE2410927BD47AA006807F6 /* RestaurantDetailModule */,
 				8DE240F327BD3D88006807F6 /* RestaurantListModule */,
 				8DE240EE27BD3D3A006807F6 /* Resources */,
 				8DE240ED27BD3D09006807F6 /* Extensions */,
@@ -110,6 +123,19 @@
 				8DE2410627BD4153006807F6 /* RestaurantListEntity.swift */,
 			);
 			path = RestaurantListModule;
+			sourceTree = "<group>";
+		};
+		8DE2410927BD47AA006807F6 /* RestaurantDetailModule */ = {
+			isa = PBXGroup;
+			children = (
+				8DE2410A27BD47DD006807F6 /* RestaurantDetailRouter.swift */,
+				8DE2410E27BD47F2006807F6 /* RestaurantDetailPresenter.swift */,
+				8DE2411127BD4811006807F6 /* RestaurantDetailIeInteractor.swift */,
+				8DE2411427BD483A006807F6 /* RestaurantDetailViewController.swift */,
+				8DE2411727BD4950006807F6 /* RestaurantDetailModuleProtocols.swift */,
+				8DE2411A27BD4996006807F6 /* RestaurantDetailEntity.swift */,
+			);
+			path = RestaurantDetailModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,14 +210,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DE240EB27BD3CCD006807F6 /* UIViewControllerExtension.swift in Sources */,
+				8DE2411827BD4950006807F6 /* RestaurantDetailModuleProtocols.swift in Sources */,
 				8DE240D527BD3A11006807F6 /* AppDelegate.swift in Sources */,
+				8DE2411227BD4811006807F6 /* RestaurantDetailIeInteractor.swift in Sources */,
 				8DE240FD27BD3F65006807F6 /* RestaurantListViewController.swift in Sources */,
 				8DE240F927BD3E42006807F6 /* RestaurantListRouter.swift in Sources */,
+				8DE2410B27BD47DD006807F6 /* RestaurantDetailRouter.swift in Sources */,
+				8DE2411527BD483A006807F6 /* RestaurantDetailViewController.swift in Sources */,
 				8DE2410727BD4153006807F6 /* RestaurantListEntity.swift in Sources */,
+				8DE2410F27BD47F2006807F6 /* RestaurantDetailPresenter.swift in Sources */,
 				8DE240D727BD3A11006807F6 /* SceneDelegate.swift in Sources */,
 				8DE2410427BD40A8006807F6 /* RestaurantListPresenter.swift in Sources */,
 				8DE2410127BD4082006807F6 /* RestaurantListInteractor.swift in Sources */,
 				8DE240F527BD3DB0006807F6 /* RestaurantListProtocols.swift in Sources */,
+				8DE2411B27BD4996006807F6 /* RestaurantDetailEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

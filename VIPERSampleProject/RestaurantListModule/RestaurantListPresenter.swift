@@ -26,6 +26,6 @@ class RestaurantListPresenter: Presenter {
     }
     
     func showRestaurantDetails(restaurantName: String) {
-        //
+        router?.routToDetailScreen(restaurantName: restaurantName)
     }
 }
