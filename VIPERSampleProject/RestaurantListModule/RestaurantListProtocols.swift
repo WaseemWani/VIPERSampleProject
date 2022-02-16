@@ -28,7 +28,7 @@ protocol Presenter {
     var router: Router? { get set }
     
     func didFetchRestaurants(result: Result<[Restaurant], APIError>)
-    func showDetails(restaurantName: String)
+    func showRestaurantDetails(restaurantName: String)
 }
 
 

@@ -73,7 +73,7 @@ extension RestaurantListViewController: UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath)
         guard let restaurantName = cell?.textLabel?.text else { return }
-        presenter?.showDetails(restaurantName: restaurantName)
+        presenter?.showRestaurantDetails(restaurantName: restaurantName)
     }
 
 }

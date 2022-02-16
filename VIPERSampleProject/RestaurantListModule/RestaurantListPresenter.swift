@@ -25,7 +25,7 @@ class RestaurantListPresenter: Presenter {
         }
     }
     
-    func showDetails(restaurantName: String) {
+    func showRestaurantDetails(restaurantName: String) {
         //
     }
 }
