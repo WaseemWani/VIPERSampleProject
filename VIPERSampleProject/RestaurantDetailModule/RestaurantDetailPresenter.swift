@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class RestaurantDetailPresenter: DetailPresenterProtocol {
     var view: DetailViewProtocol?
@@ -26,4 +27,9 @@ class RestaurantDetailPresenter: DetailPresenterProtocol {
                 view?.update(with: error)
         }
     }
+    
+    func presentRatingViewController() {
+        router?.present()
+    }
+
 }

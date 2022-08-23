@@ -8,12 +8,17 @@
 import UIKit
 
 class RestaurantDetailViewController: UIViewController, DetailViewProtocol {
+    func presentRatingViewController() {
+        //
+    }
+    
     @IBOutlet var stackView: UIStackView!
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var typeLabel: UILabel!
     @IBOutlet var addressLabel: UILabel!
     @IBOutlet var ratingLabel: UILabel!
     @IBOutlet var errorLabel: UILabel!
+    @IBOutlet var ratingButton: UIButton!
     
     var presenter: DetailPresenterProtocol?
     
@@ -40,6 +45,15 @@ class RestaurantDetailViewController: UIViewController, DetailViewProtocol {
             self.errorLabel.isHidden = false
             self.errorLabel.text =  error.localizedDescription
         }
-
+        
+    }
+    
+    @IBAction func ratingButtonAction(_ sender: Any) {
+        presenter?.presentRatingViewController()
+        
+//        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+//        let vc = storyboard.instantiateViewController(withIdentifier: "RatingViewController")
+//        vc.modalPresentationStyle = .formSheet
+//        self.present(vc, animated: true, completion: nil)
     }
 }

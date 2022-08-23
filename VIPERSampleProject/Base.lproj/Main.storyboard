@@ -108,13 +108,22 @@
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="loE-sh-Ge9">
+                                <rect key="frame" x="161" y="586.5" width="92" height="30"/>
+                                <state key="normal" title="Want to rate?"/>
+                                <connections>
+                                    <action selector="ratingButtonAction:" destination="gYX-nd-Kxm" eventType="touchUpInside" id="FPK-uJ-y5W"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="F2o-8H-VHN"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="loE-sh-Ge9" firstAttribute="top" secondItem="JZY-Bu-Off" secondAttribute="bottom" constant="35" id="3rs-nz-0hq"/>
                             <constraint firstItem="F2o-8H-VHN" firstAttribute="bottom" secondItem="A88-Rg-H4T" secondAttribute="bottom" constant="150" id="8vo-0q-EyN"/>
                             <constraint firstItem="A88-Rg-H4T" firstAttribute="leading" secondItem="JZY-Bu-Off" secondAttribute="leading" id="BF4-46-gn8"/>
                             <constraint firstItem="A88-Rg-H4T" firstAttribute="trailing" secondItem="JZY-Bu-Off" secondAttribute="trailing" id="NDU-tq-zCf"/>
+                            <constraint firstItem="loE-sh-Ge9" firstAttribute="centerX" secondItem="QBN-hm-iyN" secondAttribute="centerX" id="THC-G3-RJY"/>
                             <constraint firstItem="JZY-Bu-Off" firstAttribute="centerY" secondItem="QBN-hm-iyN" secondAttribute="centerY" id="b5i-Oc-beY"/>
                             <constraint firstItem="JZY-Bu-Off" firstAttribute="centerX" secondItem="QBN-hm-iyN" secondAttribute="centerX" id="wLy-KG-btZ"/>
                         </constraints>
@@ -123,6 +132,7 @@
                         <outlet property="addressLabel" destination="oVr-Ck-TIv" id="CNB-Wh-pv8"/>
                         <outlet property="errorLabel" destination="A88-Rg-H4T" id="3Oo-Nq-NX7"/>
                         <outlet property="nameLabel" destination="ApT-TT-BhK" id="vKV-Dr-VgJ"/>
+                        <outlet property="ratingButton" destination="loE-sh-Ge9" id="bci-ko-zcD"/>
                         <outlet property="ratingLabel" destination="mIF-VD-HeG" id="IMr-oq-Kuo"/>
                         <outlet property="stackView" destination="JZY-Bu-Off" id="H8i-Z3-Kke"/>
                         <outlet property="typeLabel" destination="EgJ-6S-Pnk" id="eEr-XX-4Be"/>
@@ -130,15 +140,120 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0VE-c7-Dta" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="991.304347826087" y="98.4375"/>
+            <point key="canvasLocation" x="1029" y="94"/>
+        </scene>
+        <!--Rating View Controller-->
+        <scene sceneID="q8H-Eo-Zhc">
+            <objects>
+                <viewController storyboardIdentifier="RatingViewController" id="wsM-d0-c00" customClass="RatingViewController" customModule="VIPERSampleProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iOz-Iw-ggU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TtR-7w-tue">
+                                <rect key="frame" x="0.0" y="646" width="414" height="250"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OqW-UX-yyR">
+                                        <rect key="frame" x="182" y="8" width="50" height="6"/>
+                                        <color key="backgroundColor" red="0.94901960784313721" green="0.95294117647058818" blue="0.96078431372549022" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="6" id="3Km-W3-qli"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="mFr-fl-sfm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Bdm-Wb-mtl">
+                                        <rect key="frame" x="107" y="49" width="200" height="45"/>
+                                        <subviews>
+                                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fUf-yz-KkG" customClass="RatingStarView" customModule="VIPERSampleProject" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="45"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zJe-wn-Hau" customClass="RatingStarView" customModule="VIPERSampleProject" customModuleProvider="target">
+                                                <rect key="frame" x="40" y="0.0" width="40" height="45"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fpi-AG-sXf" customClass="RatingStarView" customModule="VIPERSampleProject" customModuleProvider="target">
+                                                <rect key="frame" x="80" y="0.0" width="40" height="45"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MxT-Ul-R7y" customClass="RatingStarView" customModule="VIPERSampleProject" customModuleProvider="target">
+                                                <rect key="frame" x="120" y="0.0" width="40" height="45"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="biz-Tu-dQW" customClass="RatingStarView" customModule="VIPERSampleProject" customModuleProvider="target">
+                                                <rect key="frame" x="160" y="0.0" width="40" height="45"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="Vgu-Vd-KHX"/>
+                                            <constraint firstAttribute="height" constant="45" id="uHV-kU-ufx"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWX-Q2-Bl7">
+                                        <rect key="frame" x="132" y="114" width="150" height="35"/>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="R18-Di-fYe"/>
+                                            <constraint firstAttribute="height" constant="35" id="w6C-i3-ouc"/>
+                                        </constraints>
+                                        <state key="normal" title="Rate">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ratingButtonAction:" destination="wsM-d0-c00" eventType="touchUpInside" id="IZK-hY-2ce"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="JCQ-Px-rO3"/>
+                                    <constraint firstItem="OqW-UX-yyR" firstAttribute="centerX" secondItem="TtR-7w-tue" secondAttribute="centerX" id="Kta-zi-0Ph"/>
+                                    <constraint firstItem="Bdm-Wb-mtl" firstAttribute="top" secondItem="OqW-UX-yyR" secondAttribute="bottom" constant="35" id="Zlr-xA-GoE"/>
+                                    <constraint firstItem="sWX-Q2-Bl7" firstAttribute="centerX" secondItem="TtR-7w-tue" secondAttribute="centerX" id="bTa-67-1K6"/>
+                                    <constraint firstItem="sWX-Q2-Bl7" firstAttribute="top" secondItem="Bdm-Wb-mtl" secondAttribute="bottom" constant="20" id="oEl-a5-myU"/>
+                                    <constraint firstItem="Bdm-Wb-mtl" firstAttribute="centerX" secondItem="TtR-7w-tue" secondAttribute="centerX" id="pzI-CP-V1r"/>
+                                    <constraint firstItem="OqW-UX-yyR" firstAttribute="top" secondItem="TtR-7w-tue" secondAttribute="top" constant="8" id="y9D-gB-DYg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Mky-52-F4j"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="TtR-7w-tue" secondAttribute="bottom" id="48L-60-fIJ"/>
+                            <constraint firstItem="TtR-7w-tue" firstAttribute="trailing" secondItem="Mky-52-F4j" secondAttribute="trailing" id="Mrk-3n-uKI"/>
+                            <constraint firstItem="TtR-7w-tue" firstAttribute="leading" secondItem="Mky-52-F4j" secondAttribute="leading" id="nfZ-9l-Sir"/>
+                        </constraints>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="414" height="300"/>
+                    <connections>
+                        <outlet property="draggingLabel" destination="OqW-UX-yyR" id="UV4-4W-qUr"/>
+                        <outlet property="ratingButton" destination="sWX-Q2-Bl7" id="Ndo-Dy-Zm3"/>
+                        <outlet property="ratingView" destination="TtR-7w-tue" id="9uY-wM-bjl"/>
+                        <outlet property="starRatingView" destination="Bdm-Wb-mtl" id="uv3-ky-Zqj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T78-kA-zth" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1963.7681159420292" y="93.75"/>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

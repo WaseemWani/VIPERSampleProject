@@ -11,6 +11,7 @@ import UIKit
 protocol DetailRouterProtocol {
     var entryPoint: DetailViewProtocol? { get set }
     static func start(restaurantName: String) -> DetailRouterProtocol
+    func present()
 }
 
 protocol DetailPresenterProtocol {
@@ -18,6 +19,7 @@ protocol DetailPresenterProtocol {
     var interactor: DetailInteractorProtocol? { get set }
     var router: DetailRouterProtocol? { get set }
     func didFetchData(with result: Result<RestaurantDetail, APIError>)
+    func presentRatingViewController()
 }
 
 protocol DetailViewProtocol: UIViewController {

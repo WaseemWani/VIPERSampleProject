@@ -26,6 +26,9 @@
 		8DE2411527BD483A006807F6 /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2411427BD483A006807F6 /* RestaurantDetailViewController.swift */; };
 		8DE2411827BD4950006807F6 /* RestaurantDetailModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2411727BD4950006807F6 /* RestaurantDetailModuleProtocols.swift */; };
 		8DE2411B27BD4996006807F6 /* RestaurantDetailEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2411A27BD4996006807F6 /* RestaurantDetailEntity.swift */; };
+		8DE5D97228A561B100FBD723 /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE5D97128A561B100FBD723 /* RatingViewController.swift */; };
+		8DE5D9D928A629DF00FBD723 /* RatingStarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE5D9D828A629DF00FBD723 /* RatingStarView.xib */; };
+		8DE5D9DC28A62A5100FBD723 /* RatingStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE5D9DB28A62A5100FBD723 /* RatingStarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,9 @@
 		8DE2411427BD483A006807F6 /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		8DE2411727BD4950006807F6 /* RestaurantDetailModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailModuleProtocols.swift; sourceTree = "<group>"; };
 		8DE2411A27BD4996006807F6 /* RestaurantDetailEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailEntity.swift; sourceTree = "<group>"; };
+		8DE5D97128A561B100FBD723 /* RatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
+		8DE5D9D828A629DF00FBD723 /* RatingStarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatingStarView.xib; sourceTree = "<group>"; };
+		8DE5D9DB28A62A5100FBD723 /* RatingStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingStarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,8 @@
 				8DE240ED27BD3D09006807F6 /* Extensions */,
 				8DE240D427BD3A11006807F6 /* AppDelegate.swift */,
 				8DE240D627BD3A11006807F6 /* SceneDelegate.swift */,
+				8DE5D9D828A629DF00FBD723 /* RatingStarView.xib */,
+				8DE5D9DB28A62A5100FBD723 /* RatingStarView.swift */,
 				8DE240DA27BD3A11006807F6 /* Main.storyboard */,
 				8DE240DD27BD3A12006807F6 /* Assets.xcassets */,
 				8DE240DF27BD3A12006807F6 /* LaunchScreen.storyboard */,
@@ -132,6 +140,7 @@
 				8DE2410E27BD47F2006807F6 /* RestaurantDetailPresenter.swift */,
 				8DE2411127BD4811006807F6 /* RestaurantDetailIeInteractor.swift */,
 				8DE2411427BD483A006807F6 /* RestaurantDetailViewController.swift */,
+				8DE5D97128A561B100FBD723 /* RatingViewController.swift */,
 				8DE2411727BD4950006807F6 /* RestaurantDetailModuleProtocols.swift */,
 				8DE2411A27BD4996006807F6 /* RestaurantDetailEntity.swift */,
 			);
@@ -196,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DE240F027BD3D69006807F6 /* Restaurants.json in Resources */,
+				8DE5D9D928A629DF00FBD723 /* RatingStarView.xib in Resources */,
 				8DE240E127BD3A12006807F6 /* LaunchScreen.storyboard in Resources */,
 				8DE240DE27BD3A12006807F6 /* Assets.xcassets in Resources */,
 				8DE240DC27BD3A11006807F6 /* Main.storyboard in Resources */,
@@ -210,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DE240EB27BD3CCD006807F6 /* UIViewControllerExtension.swift in Sources */,
+				8DE5D9DC28A62A5100FBD723 /* RatingStarView.swift in Sources */,
 				8DE2411827BD4950006807F6 /* RestaurantDetailModuleProtocols.swift in Sources */,
 				8DE240D527BD3A11006807F6 /* AppDelegate.swift in Sources */,
 				8DE2411227BD4811006807F6 /* RestaurantDetailIeInteractor.swift in Sources */,
@@ -218,6 +229,7 @@
 				8DE2410B27BD47DD006807F6 /* RestaurantDetailRouter.swift in Sources */,
 				8DE2411527BD483A006807F6 /* RestaurantDetailViewController.swift in Sources */,
 				8DE2410727BD4153006807F6 /* RestaurantListEntity.swift in Sources */,
+				8DE5D97228A561B100FBD723 /* RatingViewController.swift in Sources */,
 				8DE2410F27BD47F2006807F6 /* RestaurantDetailPresenter.swift in Sources */,
 				8DE240D727BD3A11006807F6 /* SceneDelegate.swift in Sources */,
 				8DE2410427BD40A8006807F6 /* RestaurantListPresenter.swift in Sources */,

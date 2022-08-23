@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class RestaurantDetailRouter: DetailRouterProtocol {
     var entryPoint: DetailViewProtocol?
@@ -25,6 +26,10 @@ class RestaurantDetailRouter: DetailRouterProtocol {
         router.entryPoint = view
         
         return router
-        
+    }
+    
+    func present() {
+        let ratingViewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RatingViewController")
+        entryPoint?.present(ratingViewController, animated: false, completion: nil)
     }
 }
