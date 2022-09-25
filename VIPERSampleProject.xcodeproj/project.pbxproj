@@ -29,6 +29,10 @@
 		8DE5D97228A561B100FBD723 /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE5D97128A561B100FBD723 /* RatingViewController.swift */; };
 		8DE5D9D928A629DF00FBD723 /* RatingStarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE5D9D828A629DF00FBD723 /* RatingStarView.xib */; };
 		8DE5D9DC28A62A5100FBD723 /* RatingStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE5D9DB28A62A5100FBD723 /* RatingStarView.swift */; };
+		8DE5DAC228E02F0000FBD723 /* RatingModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE5DAC128E02EFF00FBD723 /* RatingModuleProtocols.swift */; };
+		8DE5DAC628E0310900FBD723 /* RatingModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE5DAC528E0310900FBD723 /* RatingModuleRouter.swift */; };
+		8DE5DACA28E0350600FBD723 /* RatingModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE5DAC928E0350600FBD723 /* RatingModuleInteractor.swift */; };
+		8DE5DACD28E0352300FBD723 /* RatingModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE5DACC28E0352300FBD723 /* RatingModulePresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +60,10 @@
 		8DE5D97128A561B100FBD723 /* RatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
 		8DE5D9D828A629DF00FBD723 /* RatingStarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatingStarView.xib; sourceTree = "<group>"; };
 		8DE5D9DB28A62A5100FBD723 /* RatingStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingStarView.swift; sourceTree = "<group>"; };
+		8DE5DAC128E02EFF00FBD723 /* RatingModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingModuleProtocols.swift; sourceTree = "<group>"; };
+		8DE5DAC528E0310900FBD723 /* RatingModuleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingModuleRouter.swift; sourceTree = "<group>"; };
+		8DE5DAC928E0350600FBD723 /* RatingModuleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingModuleInteractor.swift; sourceTree = "<group>"; };
+		8DE5DACC28E0352300FBD723 /* RatingModulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingModulePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +96,7 @@
 		8DE240D327BD3A11006807F6 /* VIPERSampleProject */ = {
 			isa = PBXGroup;
 			children = (
+				8DE5DAC028E02EDB00FBD723 /* RatingModule */,
 				8DE2410927BD47AA006807F6 /* RestaurantDetailModule */,
 				8DE240F327BD3D88006807F6 /* RestaurantListModule */,
 				8DE240EE27BD3D3A006807F6 /* Resources */,
@@ -140,11 +149,22 @@
 				8DE2410E27BD47F2006807F6 /* RestaurantDetailPresenter.swift */,
 				8DE2411127BD4811006807F6 /* RestaurantDetailIeInteractor.swift */,
 				8DE2411427BD483A006807F6 /* RestaurantDetailViewController.swift */,
-				8DE5D97128A561B100FBD723 /* RatingViewController.swift */,
 				8DE2411727BD4950006807F6 /* RestaurantDetailModuleProtocols.swift */,
 				8DE2411A27BD4996006807F6 /* RestaurantDetailEntity.swift */,
 			);
 			path = RestaurantDetailModule;
+			sourceTree = "<group>";
+		};
+		8DE5DAC028E02EDB00FBD723 /* RatingModule */ = {
+			isa = PBXGroup;
+			children = (
+				8DE5DAC128E02EFF00FBD723 /* RatingModuleProtocols.swift */,
+				8DE5D97128A561B100FBD723 /* RatingViewController.swift */,
+				8DE5DAC928E0350600FBD723 /* RatingModuleInteractor.swift */,
+				8DE5DACC28E0352300FBD723 /* RatingModulePresenter.swift */,
+				8DE5DAC528E0310900FBD723 /* RatingModuleRouter.swift */,
+			);
+			path = RatingModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,15 +241,19 @@
 			files = (
 				8DE240EB27BD3CCD006807F6 /* UIViewControllerExtension.swift in Sources */,
 				8DE5D9DC28A62A5100FBD723 /* RatingStarView.swift in Sources */,
+				8DE5DAC228E02F0000FBD723 /* RatingModuleProtocols.swift in Sources */,
 				8DE2411827BD4950006807F6 /* RestaurantDetailModuleProtocols.swift in Sources */,
 				8DE240D527BD3A11006807F6 /* AppDelegate.swift in Sources */,
 				8DE2411227BD4811006807F6 /* RestaurantDetailIeInteractor.swift in Sources */,
 				8DE240FD27BD3F65006807F6 /* RestaurantListViewController.swift in Sources */,
 				8DE240F927BD3E42006807F6 /* RestaurantListRouter.swift in Sources */,
 				8DE2410B27BD47DD006807F6 /* RestaurantDetailRouter.swift in Sources */,
+				8DE5DACD28E0352300FBD723 /* RatingModulePresenter.swift in Sources */,
 				8DE2411527BD483A006807F6 /* RestaurantDetailViewController.swift in Sources */,
+				8DE5DAC628E0310900FBD723 /* RatingModuleRouter.swift in Sources */,
 				8DE2410727BD4153006807F6 /* RestaurantListEntity.swift in Sources */,
 				8DE5D97228A561B100FBD723 /* RatingViewController.swift in Sources */,
+				8DE5DACA28E0350600FBD723 /* RatingModuleInteractor.swift in Sources */,
 				8DE2410F27BD47F2006807F6 /* RestaurantDetailPresenter.swift in Sources */,
 				8DE240D727BD3A11006807F6 /* SceneDelegate.swift in Sources */,
 				8DE2410427BD40A8006807F6 /* RestaurantListPresenter.swift in Sources */,

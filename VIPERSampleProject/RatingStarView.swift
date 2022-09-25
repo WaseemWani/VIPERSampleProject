@@ -37,39 +37,3 @@ class RatingStarView: UIView {
         delegate?.didTapStar(rating: self.tag)
     }
 }
-
-class RatingController: UIStackView {
-    var starsRating = 0
-    var starsEmptyPicName = UIImage(systemName: "star") // change it to your empty star picture name
-    var starsFilledPicName = UIImage(systemName: "star.fill") // change it to your filled star picture name
-    override func draw(_ rect: CGRect) {
-        let starButtons = self.subviews.filter{$0 is UIButton}
-        var starTag = 1
-        for button in starButtons {
-            if let button = button as? UIButton{
-                button.setImage(starsEmptyPicName, for: .normal)
-                button.addTarget(self, action: #selector(self.pressed(sender:)), for: .touchUpInside)
-                button.tag = starTag
-                starTag = starTag + 1
-            }
-        }
-    }
-    
-    func setStarsRating(rating: Int) {
-        self.starsRating = rating
-        let stackSubViews = self.subviews.filter{$0 is UIButton}
-        for subView in stackSubViews {
-            if let button = subView as? UIButton{
-                if button.tag > starsRating {
-                    button.setImage(starsEmptyPicName, for: .normal)
-                } else {
-                    button.setImage(starsFilledPicName, for: .normal)
-                }
-            }
-        }
-    }
-    
-    @objc func pressed(sender: UIButton) {
-        setStarsRating(rating: sender.tag)
-    }
-}

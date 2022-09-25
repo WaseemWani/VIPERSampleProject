@@ -11,7 +11,7 @@ import UIKit
 protocol DetailRouterProtocol {
     var entryPoint: DetailViewProtocol? { get set }
     static func start(restaurantName: String) -> DetailRouterProtocol
-    func present()
+    func routToRatingVC()
 }
 
 protocol DetailPresenterProtocol {

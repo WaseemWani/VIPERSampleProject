@@ -28,8 +28,10 @@ class RestaurantDetailRouter: DetailRouterProtocol {
         return router
     }
     
-    func present() {
-        let ratingViewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RatingViewController")
-        entryPoint?.present(ratingViewController, animated: false, completion: nil)
+    func routToRatingVC() {
+        let ratingRouter = RatingModuleRouter.start()
+        guard let ratingViewController = ratingRouter.entryPoint as? RatingViewController else { return }
+        ratingViewController.delegate = entryPoint as? RatingProtocol
+        entryPoint?.present(ratingViewController, animated: true, completion: nil)
     }
 }

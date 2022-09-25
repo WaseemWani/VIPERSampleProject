@@ -29,7 +29,7 @@ class RestaurantDetailPresenter: DetailPresenterProtocol {
     }
     
     func presentRatingViewController() {
-        router?.present()
+        router?.routToRatingVC()
     }
 
 }

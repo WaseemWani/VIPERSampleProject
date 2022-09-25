@@ -18,7 +18,7 @@ class RestaurantDetailViewController: UIViewController, DetailViewProtocol {
     @IBOutlet var addressLabel: UILabel!
     @IBOutlet var ratingLabel: UILabel!
     @IBOutlet var errorLabel: UILabel!
-    @IBOutlet var ratingButton: UIButton!
+    @IBOutlet var yourRatingLabel: UILabel!
     
     var presenter: DetailPresenterProtocol?
     
@@ -26,6 +26,9 @@ class RestaurantDetailViewController: UIViewController, DetailViewProtocol {
         super.viewDidLoad()
         self.title = "Restaurant Details"
         self.errorLabel.isHidden = true
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(presentRatingVC))
+        yourRatingLabel.isUserInteractionEnabled = true
+        yourRatingLabel.addGestureRecognizer(tapGesture)
     }
     
     func update(with restaurantDetails: RestaurantDetail) {
@@ -45,15 +48,17 @@ class RestaurantDetailViewController: UIViewController, DetailViewProtocol {
             self.errorLabel.isHidden = false
             self.errorLabel.text =  error.localizedDescription
         }
-        
     }
     
-    @IBAction func ratingButtonAction(_ sender: Any) {
+    @objc func presentRatingVC() {
         presenter?.presentRatingViewController()
-        
-//        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "RatingViewController")
-//        vc.modalPresentationStyle = .formSheet
-//        self.present(vc, animated: true, completion: nil)
+    }
+}
+
+extension RestaurantDetailViewController: RatingProtocol {
+    func didRateRestaurant(with rating: Int) {
+         yourRatingLabel.text = "You rated it as: \(rating)"
+        yourRatingLabel.textColor = .black
+        yourRatingLabel.isUserInteractionEnabled = false
     }
 }

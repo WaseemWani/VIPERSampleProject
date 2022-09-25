@@ -7,7 +7,12 @@
 
 import UIKit
 
-class RatingViewController: UIViewController {
+protocol RatingProtocol: AnyObject {
+    func didRateRestaurant(with rating: Int)
+}
+
+class RatingViewController: UIViewController, RatingViewProtocol {
+    
     //MARK:- Outlets
     @IBOutlet var ratingView: UIView!
     @IBOutlet var draggingLabel: UILabel!
@@ -15,8 +20,10 @@ class RatingViewController: UIViewController {
     @IBOutlet var starRatingView: UIStackView!
     
     // MARK:- Variables
-    var currentStarsRating  = 0
-    
+    var currentStarsRating: Int?
+    weak var delegate: RatingProtocol?
+    var presenter: RatingPresenterProtocol?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         starRatingView.subviews.forEach { view in
@@ -27,6 +34,10 @@ class RatingViewController: UIViewController {
     }
     
     func didTapView() {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func dismissBtnAction(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     
@@ -43,18 +54,21 @@ class RatingViewController: UIViewController {
     }
     
     @IBAction func ratingButtonAction(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        self.dismiss(animated: true, completion: { [weak self] in
+            if let rating = self?.currentStarsRating {
+                self?.delegate?.didRateRestaurant(with: rating)
+            }
+        })
     }
 }
 
 extension RatingViewController: StarRatingProtocol {
     func didTapStar(rating: Int) {
         self.currentStarsRating = rating
-        print("rating: \(currentStarsRating)")
         let stackSubViews = starRatingView.subviews.filter{$0 is RatingStarView}
         for subView in stackSubViews {
-            if let starview = subView as? RatingStarView {
-                if starview.tag > currentStarsRating {
+            if let starview = subView as? RatingStarView, let rating = currentStarsRating {
+                if starview.tag > rating {
                     starview.starImageView.image =  UIImage(systemName: "star")
                 } else {
                     starview.starImageView.image =  UIImage(systemName: "star.fill")
