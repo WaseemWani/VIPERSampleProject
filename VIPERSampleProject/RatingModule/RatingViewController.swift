@@ -20,7 +20,7 @@ class RatingViewController: UIViewController, RatingViewProtocol {
     @IBOutlet var starRatingView: UIStackView!
     
     // MARK:- Variables
-    var currentStarsRating: Int?
+    private var currentStarsRating: Int?
     weak var delegate: RatingProtocol?
     var presenter: RatingPresenterProtocol?
 
