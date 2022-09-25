@@ -96,9 +96,9 @@
 		8DE240D327BD3A11006807F6 /* VIPERSampleProject */ = {
 			isa = PBXGroup;
 			children = (
-				8DE5DAC028E02EDB00FBD723 /* RatingModule */,
-				8DE2410927BD47AA006807F6 /* RestaurantDetailModule */,
 				8DE240F327BD3D88006807F6 /* RestaurantListModule */,
+				8DE2410927BD47AA006807F6 /* RestaurantDetailModule */,
+				8DE5DAC028E02EDB00FBD723 /* RatingModule */,
 				8DE240EE27BD3D3A006807F6 /* Resources */,
 				8DE240ED27BD3D09006807F6 /* Extensions */,
 				8DE240D427BD3A11006807F6 /* AppDelegate.swift */,
