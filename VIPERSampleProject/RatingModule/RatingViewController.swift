@@ -33,10 +33,6 @@ class RatingViewController: UIViewController, RatingViewProtocol {
         }
     }
     
-    func didTapView() {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
     @IBAction func dismissBtnAction(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
