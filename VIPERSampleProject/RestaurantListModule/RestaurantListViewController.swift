@@ -9,8 +9,8 @@ import UIKit
 
 class RestaurantListViewController: UIViewController, AnyView {
     @IBOutlet var errorLabel: UILabel!
-    
     @IBOutlet var tableView: UITableView!
+    
     var presenter: Presenter?
     var restaurants: [Restaurant]?
     

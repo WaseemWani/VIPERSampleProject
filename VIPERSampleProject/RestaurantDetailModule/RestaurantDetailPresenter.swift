@@ -31,5 +31,8 @@ class RestaurantDetailPresenter: DetailPresenterProtocol {
     func presentRatingViewController() {
         router?.routToRatingVC()
     }
-
+    
+    func routToMenuVC(restaurantName: String) {
+        router?.routToMenuVC(restaurantName: restaurantName)
+    }
 }

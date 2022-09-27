@@ -1,0 +1,158 @@
+
+[
+    {
+        "name": "The Delhi Darbar",
+        "menuItems": [
+            {
+                "itemName": "Chicken Kanti"
+            },
+            {
+                "itemName": "Chicken Biryani"
+            },
+            {
+                "itemName": "Goshtaab"
+            },
+            {
+                "itemName": "Rista & Seekh kabab"
+            }
+        ]
+    },
+    {
+        "name": "Hat Trick",
+        "menuItems": [
+            {
+                "itemName": "Chicken Pizza"
+            },
+            {
+                "itemName": "Chicken Burger"
+            },
+            {
+                "itemName": "Onion and Cheez Pizza"
+            },
+            {
+                "itemName": "Veg Burger"
+            }
+        ]
+    },
+    {
+        "name": "Hitz",
+        "menuItems": [
+            {
+                "itemName": "Chicken Biryani"
+            },
+            {
+                "itemName": "Hitz Special Chicken"
+            },
+            {
+                "itemName": "Chicken Kanti"
+            },
+            {
+                "itemName": "Checken patties and rolls"
+            }
+        ]
+    },
+    {
+        "name": "Bold Street Café",
+        "menuItems": [
+            {
+                "itemName": "Chicken Pizza"
+            },
+            {
+                "itemName": "Chicken Burger"
+            },
+            {
+                "itemName": "Veg Pizza"
+            },
+            {
+                "itemName": "Cheese Pizza"
+            }
+        ]
+    },
+    {
+        "name": "Mughal Darbar",
+        "menuItems": [
+            {
+                "itemName": "Chicken Kanti"
+            },
+            {
+                "itemName": "Chicken Biryani"
+            },
+            {
+                "itemName": "Goshtaab"
+            },
+            {
+                "itemName": "Chicken Rolls and Patties"
+            }
+        ]
+    },
+    {
+        "name": "Amigos",
+        "menuItems": [
+            {
+                "itemName": "Chicken Kanti"
+            },
+            {
+                "itemName": "Chicken Bizza"
+            },
+            {
+                "itemName": "Veg Pizza"
+            },
+            {
+                "itemName": "Chicken and Veg Burgers"
+            }
+            
+        ]
+    },
+    {
+        "name": "Hunger Street",
+        "menuItems": [
+            {
+                "itemName": "Chicken Kanti"
+            },
+            {
+                "itemName": "Chicken Biryani"
+            },
+            {
+                "itemName": "Goshtaab"
+            },
+            {
+                "itemName": "Rista & Seekh kabab"
+            }
+            
+        ]
+    },
+    {
+        "name": "Parsa's",
+        "menuItems": [
+            {
+                "itemName": "Chicken Kabab Platter"
+            },
+            {
+                "itemName": "Hyderabadi Chicken Dum Biryani"
+            },
+            {
+                "itemName": "Kadhai Chicken"
+            },
+            {
+                "itemName": "Chicken Korma"
+            }
+        ]
+    },
+    {
+        "name": "Kh'n Ch'n",
+        "menuItems": [
+            {
+                "itemName": "Chicken and Veg Burgers"
+            },
+            {
+                "itemName": "Chicken Pizza"
+            },
+            {
+                "itemName": "Veg Pizza"
+            },
+            {
+                "itemName": "Cheese Pizza"
+            }
+        ]
+    }
+]

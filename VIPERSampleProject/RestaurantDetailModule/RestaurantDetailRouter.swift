@@ -34,4 +34,10 @@ class RestaurantDetailRouter: DetailRouterProtocol {
         ratingViewController.delegate = entryPoint as? RatingProtocol
         entryPoint?.present(ratingViewController, animated: true, completion: nil)
     }
+    
+    func routToMenuVC(restaurantName: String) {
+        let menuRouter = RestaurantMenuRouter.start(restaurantName: restaurantName)
+        guard let menuVC = menuRouter.entryPoint else { return }
+        entryPoint?.navigationController?.pushViewController(menuVC, animated: true)
+    }
 }

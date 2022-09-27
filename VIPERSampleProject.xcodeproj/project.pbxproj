@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8DD3FCD528E18357001E2385 /* RestaurantMenu.json in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3FCD428E18357001E2385 /* RestaurantMenu.json */; };
+		8DD3FCD928E189B8001E2385 /* RestaurantMenuEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD3FCD828E189B8001E2385 /* RestaurantMenuEntity.swift */; };
+		8DD3FCDE28E18A44001E2385 /* RestaurantMenuRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD3FCDD28E18A44001E2385 /* RestaurantMenuRouter.swift */; };
+		8DD3FCE228E18A51001E2385 /* RestaurantMenuInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD3FCE128E18A51001E2385 /* RestaurantMenuInteractor.swift */; };
+		8DD3FCE528E18A5B001E2385 /* RestaurantMenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD3FCE428E18A5B001E2385 /* RestaurantMenuPresenter.swift */; };
+		8DD3FCE828E18A68001E2385 /* RestaurantMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD3FCE728E18A68001E2385 /* RestaurantMenuViewController.swift */; };
+		8DD3FCEB28E18AA4001E2385 /* RestaurantMenuProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD3FCEA28E18AA4001E2385 /* RestaurantMenuProtocols.swift */; };
+		8DD3FCF228E1D693001E2385 /* RestaurantMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD3FCF028E1D693001E2385 /* RestaurantMenuTableViewCell.swift */; };
+		8DD3FCF328E1D693001E2385 /* RestaurantMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3FCF128E1D693001E2385 /* RestaurantMenuTableViewCell.xib */; };
+		8DD3FD3728E21127001E2385 /* ViewWithLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD3FD3628E21127001E2385 /* ViewWithLabel.swift */; };
+		8DD3FD3A28E21137001E2385 /* ViewWithLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DD3FD3928E21137001E2385 /* ViewWithLabel.xib */; };
 		8DE240D527BD3A11006807F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE240D427BD3A11006807F6 /* AppDelegate.swift */; };
 		8DE240D727BD3A11006807F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE240D627BD3A11006807F6 /* SceneDelegate.swift */; };
 		8DE240DC27BD3A11006807F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE240DA27BD3A11006807F6 /* Main.storyboard */; };
@@ -36,6 +47,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8DD3FCD428E18357001E2385 /* RestaurantMenu.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RestaurantMenu.json; sourceTree = "<group>"; };
+		8DD3FCD828E189B8001E2385 /* RestaurantMenuEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenuEntity.swift; sourceTree = "<group>"; };
+		8DD3FCDD28E18A44001E2385 /* RestaurantMenuRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenuRouter.swift; sourceTree = "<group>"; };
+		8DD3FCE128E18A51001E2385 /* RestaurantMenuInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenuInteractor.swift; sourceTree = "<group>"; };
+		8DD3FCE428E18A5B001E2385 /* RestaurantMenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenuPresenter.swift; sourceTree = "<group>"; };
+		8DD3FCE728E18A68001E2385 /* RestaurantMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenuViewController.swift; sourceTree = "<group>"; };
+		8DD3FCEA28E18AA4001E2385 /* RestaurantMenuProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenuProtocols.swift; sourceTree = "<group>"; };
+		8DD3FCF028E1D693001E2385 /* RestaurantMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenuTableViewCell.swift; sourceTree = "<group>"; };
+		8DD3FCF128E1D693001E2385 /* RestaurantMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantMenuTableViewCell.xib; sourceTree = "<group>"; };
+		8DD3FD3628E21127001E2385 /* ViewWithLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewWithLabel.swift; sourceTree = "<group>"; };
+		8DD3FD3928E21137001E2385 /* ViewWithLabel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewWithLabel.xib; sourceTree = "<group>"; };
 		8DE240D127BD3A11006807F6 /* VIPERSampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPERSampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE240D427BD3A11006807F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DE240D627BD3A11006807F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +99,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8DD3FCDC28E18A18001E2385 /* RestaurantMenuModule */ = {
+			isa = PBXGroup;
+			children = (
+				8DD3FCE728E18A68001E2385 /* RestaurantMenuViewController.swift */,
+				8DD3FCE128E18A51001E2385 /* RestaurantMenuInteractor.swift */,
+				8DD3FCE428E18A5B001E2385 /* RestaurantMenuPresenter.swift */,
+				8DD3FCD828E189B8001E2385 /* RestaurantMenuEntity.swift */,
+				8DD3FCDD28E18A44001E2385 /* RestaurantMenuRouter.swift */,
+				8DD3FCEA28E18AA4001E2385 /* RestaurantMenuProtocols.swift */,
+				8DD3FCF028E1D693001E2385 /* RestaurantMenuTableViewCell.swift */,
+				8DD3FCF128E1D693001E2385 /* RestaurantMenuTableViewCell.xib */,
+				8DD3FD3628E21127001E2385 /* ViewWithLabel.swift */,
+				8DD3FD3928E21137001E2385 /* ViewWithLabel.xib */,
+			);
+			path = RestaurantMenuModule;
+			sourceTree = "<group>";
+		};
 		8DE240C827BD3A11006807F6 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +135,7 @@
 		8DE240D327BD3A11006807F6 /* VIPERSampleProject */ = {
 			isa = PBXGroup;
 			children = (
+				8DD3FCDC28E18A18001E2385 /* RestaurantMenuModule */,
 				8DE240F327BD3D88006807F6 /* RestaurantListModule */,
 				8DE2410927BD47AA006807F6 /* RestaurantDetailModule */,
 				8DE5DAC028E02EDB00FBD723 /* RatingModule */,
@@ -125,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				8DE240EF27BD3D69006807F6 /* Restaurants.json */,
+				8DD3FCD428E18357001E2385 /* RestaurantMenu.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -145,12 +186,12 @@
 		8DE2410927BD47AA006807F6 /* RestaurantDetailModule */ = {
 			isa = PBXGroup;
 			children = (
-				8DE2410A27BD47DD006807F6 /* RestaurantDetailRouter.swift */,
-				8DE2410E27BD47F2006807F6 /* RestaurantDetailPresenter.swift */,
-				8DE2411127BD4811006807F6 /* RestaurantDetailIeInteractor.swift */,
 				8DE2411427BD483A006807F6 /* RestaurantDetailViewController.swift */,
-				8DE2411727BD4950006807F6 /* RestaurantDetailModuleProtocols.swift */,
+				8DE2411127BD4811006807F6 /* RestaurantDetailIeInteractor.swift */,
+				8DE2410E27BD47F2006807F6 /* RestaurantDetailPresenter.swift */,
 				8DE2411A27BD4996006807F6 /* RestaurantDetailEntity.swift */,
+				8DE2410A27BD47DD006807F6 /* RestaurantDetailRouter.swift */,
+				8DE2411727BD4950006807F6 /* RestaurantDetailModuleProtocols.swift */,
 			);
 			path = RestaurantDetailModule;
 			sourceTree = "<group>";
@@ -158,11 +199,11 @@
 		8DE5DAC028E02EDB00FBD723 /* RatingModule */ = {
 			isa = PBXGroup;
 			children = (
-				8DE5DAC128E02EFF00FBD723 /* RatingModuleProtocols.swift */,
 				8DE5D97128A561B100FBD723 /* RatingViewController.swift */,
 				8DE5DAC928E0350600FBD723 /* RatingModuleInteractor.swift */,
 				8DE5DACC28E0352300FBD723 /* RatingModulePresenter.swift */,
 				8DE5DAC528E0310900FBD723 /* RatingModuleRouter.swift */,
+				8DE5DAC128E02EFF00FBD723 /* RatingModuleProtocols.swift */,
 			);
 			path = RatingModule;
 			sourceTree = "<group>";
@@ -224,10 +265,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DD3FCD528E18357001E2385 /* RestaurantMenu.json in Resources */,
+				8DD3FD3A28E21137001E2385 /* ViewWithLabel.xib in Resources */,
 				8DE240F027BD3D69006807F6 /* Restaurants.json in Resources */,
 				8DE5D9D928A629DF00FBD723 /* RatingStarView.xib in Resources */,
 				8DE240E127BD3A12006807F6 /* LaunchScreen.storyboard in Resources */,
 				8DE240DE27BD3A12006807F6 /* Assets.xcassets in Resources */,
+				8DD3FCF328E1D693001E2385 /* RestaurantMenuTableViewCell.xib in Resources */,
 				8DE240DC27BD3A11006807F6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,21 +288,29 @@
 				8DE5DAC228E02F0000FBD723 /* RatingModuleProtocols.swift in Sources */,
 				8DE2411827BD4950006807F6 /* RestaurantDetailModuleProtocols.swift in Sources */,
 				8DE240D527BD3A11006807F6 /* AppDelegate.swift in Sources */,
+				8DD3FCDE28E18A44001E2385 /* RestaurantMenuRouter.swift in Sources */,
+				8DD3FCE528E18A5B001E2385 /* RestaurantMenuPresenter.swift in Sources */,
 				8DE2411227BD4811006807F6 /* RestaurantDetailIeInteractor.swift in Sources */,
 				8DE240FD27BD3F65006807F6 /* RestaurantListViewController.swift in Sources */,
 				8DE240F927BD3E42006807F6 /* RestaurantListRouter.swift in Sources */,
 				8DE2410B27BD47DD006807F6 /* RestaurantDetailRouter.swift in Sources */,
+				8DD3FCF228E1D693001E2385 /* RestaurantMenuTableViewCell.swift in Sources */,
+				8DD3FCE228E18A51001E2385 /* RestaurantMenuInteractor.swift in Sources */,
 				8DE5DACD28E0352300FBD723 /* RatingModulePresenter.swift in Sources */,
 				8DE2411527BD483A006807F6 /* RestaurantDetailViewController.swift in Sources */,
+				8DD3FCD928E189B8001E2385 /* RestaurantMenuEntity.swift in Sources */,
 				8DE5DAC628E0310900FBD723 /* RatingModuleRouter.swift in Sources */,
 				8DE2410727BD4153006807F6 /* RestaurantListEntity.swift in Sources */,
 				8DE5D97228A561B100FBD723 /* RatingViewController.swift in Sources */,
+				8DD3FCEB28E18AA4001E2385 /* RestaurantMenuProtocols.swift in Sources */,
 				8DE5DACA28E0350600FBD723 /* RatingModuleInteractor.swift in Sources */,
+				8DD3FD3728E21127001E2385 /* ViewWithLabel.swift in Sources */,
 				8DE2410F27BD47F2006807F6 /* RestaurantDetailPresenter.swift in Sources */,
 				8DE240D727BD3A11006807F6 /* SceneDelegate.swift in Sources */,
 				8DE2410427BD40A8006807F6 /* RestaurantListPresenter.swift in Sources */,
 				8DE2410127BD4082006807F6 /* RestaurantListInteractor.swift in Sources */,
 				8DE240F527BD3DB0006807F6 /* RestaurantListProtocols.swift in Sources */,
+				8DD3FCE828E18A68001E2385 /* RestaurantMenuViewController.swift in Sources */,
 				8DE2411B27BD4996006807F6 /* RestaurantDetailEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

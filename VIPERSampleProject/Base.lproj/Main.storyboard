@@ -251,7 +251,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T78-kA-zth" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1963.7681159420292" y="93.75"/>
+            <point key="canvasLocation" x="1983" y="601"/>
+        </scene>
+        <!--Restaurant Menu View Controller-->
+        <scene sceneID="nGT-IZ-fBB">
+            <objects>
+                <viewController storyboardIdentifier="RestaurantMenuViewController" id="LpB-PR-KXe" customClass="RestaurantMenuViewController" customModule="VIPERSampleProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t39-ZV-fi5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nSQ-9H-5O0">
+                                <rect key="frame" x="10" y="54" width="394" height="808"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yC3-MW-JJT"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="yC3-MW-JJT" firstAttribute="trailing" secondItem="nSQ-9H-5O0" secondAttribute="trailing" constant="10" id="Imq-xg-eit"/>
+                            <constraint firstItem="nSQ-9H-5O0" firstAttribute="leading" secondItem="yC3-MW-JJT" secondAttribute="leading" constant="10" id="Mhx-HX-wWI"/>
+                            <constraint firstItem="nSQ-9H-5O0" firstAttribute="top" secondItem="yC3-MW-JJT" secondAttribute="top" constant="10" id="VHy-Yg-MnO"/>
+                            <constraint firstItem="yC3-MW-JJT" firstAttribute="bottom" secondItem="nSQ-9H-5O0" secondAttribute="bottom" id="k75-0x-aTA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="nSQ-9H-5O0" id="wE0-nM-tZw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZmE-vE-bWU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1983" y="-94"/>
         </scene>
     </scenes>
     <resources>

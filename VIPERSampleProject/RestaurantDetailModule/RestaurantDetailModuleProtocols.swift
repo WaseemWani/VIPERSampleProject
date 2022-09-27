@@ -12,6 +12,7 @@ protocol DetailRouterProtocol {
     var entryPoint: DetailViewProtocol? { get set }
     static func start(restaurantName: String) -> DetailRouterProtocol
     func routToRatingVC()
+    func routToMenuVC(restaurantName: String)
 }
 
 protocol DetailPresenterProtocol {
@@ -20,6 +21,7 @@ protocol DetailPresenterProtocol {
     var router: DetailRouterProtocol? { get set }
     func didFetchData(with result: Result<RestaurantDetail, APIError>)
     func presentRatingViewController()
+    func routToMenuVC(restaurantName: String)
 }
 
 protocol DetailViewProtocol: UIViewController {

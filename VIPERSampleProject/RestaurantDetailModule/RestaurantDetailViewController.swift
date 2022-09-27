@@ -8,10 +8,8 @@
 import UIKit
 
 class RestaurantDetailViewController: UIViewController, DetailViewProtocol {
-    func presentRatingViewController() {
-        //
-    }
-    
+
+    //MARK: Outlets
     @IBOutlet var stackView: UIStackView!
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var typeLabel: UILabel!
@@ -20,15 +18,26 @@ class RestaurantDetailViewController: UIViewController, DetailViewProtocol {
     @IBOutlet var errorLabel: UILabel!
     @IBOutlet var yourRatingLabel: UILabel!
     
+    //MARK: Properties
     var presenter: DetailPresenterProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Restaurant Details"
+        navigationItem.backButtonTitle = " "
+        let rightBarButton = UIBarButtonItem(title: "See menu", style: .plain, target: self, action: #selector(didTapMenuButton))
+        rightBarButton.tintColor = .link
+        navigationItem.rightBarButtonItem = rightBarButton
         self.errorLabel.isHidden = true
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(presentRatingVC))
         yourRatingLabel.isUserInteractionEnabled = true
         yourRatingLabel.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func didTapMenuButton() {
+        if let name = nameLabel.text {
+            presenter?.routToMenuVC(restaurantName: name)
+        }
     }
     
     func update(with restaurantDetails: RestaurantDetail) {
